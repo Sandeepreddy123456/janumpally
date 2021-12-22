@@ -1,0 +1,48 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
+<!-- <div class="container"> -->
+<div class="row">
+    <div class="col-sm-2">
+  <app-nav-bar></app-nav-bar>
+
+
+
+
+    </div>
+     <div class="col-sm-10">
+<h2 style="text-align: center;">welcome to Profile</h2>
+<input type="text" [(ngModel)]="id">
+<input class=" btn btn-success" type="button" value ="search" (click)="byId()">
+<table style="width:100%" >
+ 
+
+  <tr>
+    <th>ID</th>
+    <th>UserName</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th colspan="2">Action</th>
+  </tr>
+  <tr  *ngFor ="let lst of idlist ">
+    <td>{{lst.id}}</td>
+    <td>{{lst.userName}}</td>
+    <td>{{lst.email}}</td>
+    <td>{{lst.password}}</td>
+   <td> <button style='margin-right:16px' (click)="updateEmployee(lst.id)" class="btn btn-success btn-xs" style="margin-left: 10px">Edit details</button></td>
+    <td class="text-center"><button class="btn btn-danger btn-xs" (click)="delteUser(lst.id)"><span class="glyphicon glyphicon-remove"></span> Delete</button></td>
+
+
+
+
+  </tr>
+
+  
+</table>
+     </div>
+  
+  </div>
+  <div style="margin-top: 0px;">
+    <app-footer-page></app-footer-page>
+  </div>
+<!-- </div> -->

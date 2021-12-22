@@ -1,0 +1,16 @@
+#footer{
+    background-color: grey;
+    /* position: fixed; */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* width:100%; */
+    margin-left: -10px;
+   height: 150px;
+    /* margin-right:500px; */
+
+}
+a{
+    color:white;
+    padding-left: 30px;
+    
+}

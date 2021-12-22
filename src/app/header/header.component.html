@@ -1,0 +1,19 @@
+<h1 [ngStyle]="styleRegister">JANUMPALLY FAMILY</h1>
+<marquee behavior="scroll" direction="left">Welcome to janumpally page.do you need more details about janumpally family please register.if you are already register please sign-in. </marquee>
+<nav>
+    <div *ngIf="!isLoggedIn">
+    <button  id="sign-in" class="btn btn-danger" routerLink ="/signin" >sign-in</button>
+  
+    <button  id="register" class="btn btn-danger" routerLink ="/register" >Register</button>
+ 
+</div>
+<div *ngIf="isLoggedIn">
+    <button  id="sign-in" class="btn btn-danger" (click)="signOut()" >sign-Out</button>
+   
+    <button  id="register" class="btn btn-danger" routerLink ="/myAccount" >My Account</button>
+ 
+</div>
+</nav>
+
+<br><br>
+<div style="background-color: yellow;" dir="rtl"  > Date  :   {{today| date}}</div>

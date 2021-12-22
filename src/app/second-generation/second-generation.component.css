@@ -1,0 +1,13 @@
+h3{
+    color:green;
+    text-align: center;
+}
+#second{
+    margin-left: 100px;
+}
+#about{
+    float: left;
+}
+#search{
+    float: right;
+}

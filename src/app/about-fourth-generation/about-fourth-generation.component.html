@@ -1,0 +1,82 @@
+<p>known more about fourth generation...</p>
+<input  id="search" type="text" class ="form-control" placeholder="Search By Name" style="width: 300px" [(ngModel)]="searchTerm"><br><br>
+<div style=" overflow: auto; height: 130px;">
+<div class="panel panel-primary" *ngFor="let fam of family |familyFilter:searchTerm">
+    <!--  using css-->
+    <div class ="tab">
+    <div class="heading">
+    <div class="panel-heading">
+     <h3 class="panel-title">{{fam.name}}</h3>   
+    </div>
+    </div>
+ 
+    <div class ="panel-body">
+   <div class="col-xl-10">
+    <div class="row vertical-align">
+ <div class ="col-xl-4">
+<img  class="imageClass" [src]="fam.photopath"/>
+ </div>
+ <div class ="col-xl-8">
+
+<!-- <div class="row">
+    <div class="col-xl-6">
+    Gender
+    </div>
+    <div class="col-xl-6">
+        :{{"    "+fam.gender}}
+    </div>
+</div> -->
+<!-- <div class="row">
+    <div class="col-xl-6">
+    Date of Birth
+    </div>
+    <div class="col-xl-6">
+        :{{"    "+employe.dateOfBirth |date:"dd/MM/yyyy"}}
+    </div>
+</div> -->
+<!-- <div class="row">
+    <div class="col-xl-6">
+    Contactpreference
+    </div>
+    <div class="col-xl-6">
+        :{{"    "+fam.email}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-6">
+    Department
+    </div>
+    <div class="col-xl-6">
+        :{{"   "+fam.department}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-6">
+    Is Active
+    </div>
+    <div class="col-xl-6">
+        :{{ "    "+  fam.isActive}}
+    </div>
+</div> -->
+
+<div class="row">
+    <div class="col-xl-2">
+    Is Active
+    </div>
+    <div class="col-xl-10">
+        :{{ "    "+  fam.content}}
+    </div>
+</div>
+ </div>
+     </div>
+   </div>
+    </div>
+
+    
+</div><br><br><br>
+</div>
+</div>
+
+<router-outlet></router-outlet>
+<!-- <about-first-generation></about-first-generation> -->
+<!-- <router-outlet></router-outlet> -->

@@ -1,0 +1,48 @@
+
+<div class ="container-fluid">
+
+<pre>!Congratulations ...
+    now your account is activated.
+    welcome to janumpally family.
+    to known more details please
+    go through first generation
+</pre>
+<form [formGroup]="login" (ngsubmit)="login.valid && onSubmit()">
+    <div class="form-group">
+        <label>Email :</label>
+        <input type="email" [class.is-invalid]="f.email.invalid && f.email.touched " formControlName="email" class =form-control>
+        <div *ngIf="(f.email.invalid && f.email.touched) ||empty">
+            <small *ngIf="f.email.errors?.required; else email">email is required</small>
+          <ng-template #email>
+            <small *ngIf="f.email.errors?.pattern"> should  be in format</small>
+          </ng-template>
+          </div>
+        </div>
+        <div class="form-group">
+            <label>Password :</label><br>
+       
+            <!-- <input type ="password" [class.is-invalid]="password.invalid && password.touched " formControlName="password" class =form-control> -->
+            <div class="input-container">
+                <input [type]="field ? 'password' :'text'"  [class.is-invalid]="f.password.invalid && f.password.touched " formControlName="password" class =form-control>
+                <i class="material-icons" (click)="field=!field" >{{field ? 'visibility_off' :'visibility'}}</i>
+            </div>
+            <div *ngIf="(f.password.invalid && f.password.touched)|| empty">
+            <small *ngIf="f.password.errors?.required; else password">Password is required</small>
+            <ng-template #password>
+            <small *ngIf="f.password.errors?.pattern">password is invalid</small>
+            </ng-template>
+            <!-- <small *ngIf="password.errors?.minlength">password must be at least 8 characters</small> -->
+            
+            </div>
+            </div>
+
+<button  class ="btn btn-info"  (click)="back()">back</button>
+
+<button type="button" (click)="onSubmit()" class="btn btn-success"  id="signin"  >Sign-in</button>
+</form>
+<div style="margin-top: 290px;">
+  <app-footer-page></app-footer-page>
+</div>
+</div>
+
+<router-outlet></router-outlet>

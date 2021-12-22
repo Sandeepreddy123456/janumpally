@@ -1,0 +1,25 @@
+<div class ="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <app-nav-bar></app-nav-bar>
+        </div>
+        <div class="col-sm-10">
+<h3>Fourth Generation</h3>
+<div class="form-group">
+    <input  id="search" type="text" class ="form-control" placeholder="Search By Name" style="width: 300px" [(ngModel)]="searchTerm">
+</div>
+<div id="about">
+<h6 *ngFor="let fourthgeneration of fourthGenerations |familyFilter:searchTerm">{{fourthgeneration.id}} {{fourthgeneration.name}}</h6>
+<h3>{{errorMsg}}</h3>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<button  class="btn btn-info"   (click)="aboutFourth()" >More details about Fourth Generation</button>
+<router-outlet></router-outlet>
+<br><br>
+<button  class ="btn btn-info" (click)="back()">back</button>
+
+</div>
+</div>
+<div style="margin-top: 0px;">
+    <app-footer-page></app-footer-page>
+  </div>
+</div>

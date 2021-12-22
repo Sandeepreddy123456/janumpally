@@ -1,0 +1,12 @@
+ [
+    { "id":1,
+      "name":"narasimha",
+      "photopath":"assets/images/pavan.jpg",
+      "content":"narasimha reddy belongs to first generation.His wife name is laxmidevamma .they have 5 children(venkatreddy,suvarna,prabhakar.madhav and gopalreddys)"
+    },
+    {"id":2,
+       "name":"Laxmidevamma",
+       "photopath":"assets/images/pavan.jpg",
+       "content":"narasimha reddy belongs to first generation.His wife name is laxmidevamma .they have 5 children(venkatreddy,suvarna,prabhakar.madhav and gopalreddys)"
+      }
+  ]

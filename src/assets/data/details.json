@@ -1,0 +1,66 @@
+[
+    {
+      "id":1,
+      "name":"sandeep",
+      "gender":"male",
+      "contactPreference":"Email",
+      "email":"jsandeep@gmail.com",
+    
+    "department":"ece",
+    "isActive":true,
+    "photopath":"assets/images/sandeep.jpg"
+    
+    },
+    {
+      "id":2,
+     "name":"reethu",
+      "gender":"female",
+      "contactPreference":"Email",
+      "email":"reethu@gmail.com",
+    
+    "department":"CSE",
+    "isActive":true,
+    "photopath":"assets/images/reethu.jpg"
+    
+    },
+    {
+      "id":3,
+      "name":"pavan",
+      "gender":"male",
+      "contactPreference":"Email",
+      "email":"jpavan@gmail.com",
+     
+    "department":"IT",
+    "isActive":"true",
+    "photopath":"assets/images/pavan.jpg"
+    
+    },
+    {
+      "id":4,
+      "name":"nikki",
+      "gender":"female",
+      "contactPreference":"Email",
+      "email":"jnikki@gmail.com",
+    
+    "department":"EEE",
+    "isActive":true,
+    "photopath":"assets/images/nikki.jpg"
+    
+    },
+    {
+      "id":5,
+      "name":"sai",
+      "gender":"male",
+      "contactPreference":"Email",
+      "email":"sai@gmail.com",
+    
+    "department":"EEE",
+    "isActive":true,
+    "photopath":"assets/images/sai.jpg"
+    
+    }
+    
+    
+    
+    
+    ]

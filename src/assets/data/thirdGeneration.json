@@ -1,0 +1,57 @@
+[
+  { "id":1,
+    "name":"Jyothi-kondal",
+    "photopath":"assets/images/jyothi.jpg",
+    "content":"jyothi belong to third generation . Her husband name is kondal and they have 2 children(mahi and sai) "
+  },
+  { "id":2,
+    "name":"Nagesh-phuspa",
+    "photopath":"assets/images/pavan.jpg",
+    "content":"Nagesh belong to third generation . His wife name is phuspa and they have 2 children(Kanna and snigdha) "
+  },
+    { "id":3,
+      "name":"Shailaja-bhaskar",
+      "photopath":"assets/images/pavan.jpg",
+      "content":"Shailaja belong to third generation . Her husband name is bhaskar and they have 2 children(akshaya and praveen) "
+    },
+    { "id":4,
+      "name":"Prashanthi-Prashanth",
+      "photopath":"assets/images/prashanthi.jpg",
+      "content":"prashanthi belong to third generation.Her husband name is prasthanth and they have 2 children(vimudha and vihas)"
+    },
+    { "id":5,
+      "name":"Ashok-shilpa",
+      "photopath":"assets/images/ashok.jpg",
+      "content":"Ashok belong to third generation.His wife name is shilpa and they have 2 chidren(nirvika and nithvik)"
+    },
+    {"id":6,
+       "name":"Krishna-roja",
+       "photopath":"assets/images/krishna.jpg",
+       "content":"krishna belong to third generation .His wife  is roja and they have 2 children(jayavath and riya)"
+      },
+      {
+        "id":7,
+        "name":"Ramesh-sravya",
+        "photopath":"assets/images/ramesh.jpg",
+        "content":"ramesh reddy belong to third generation .His wife name is sravya and they have 1 child (tetu)"
+      },
+    { "id":8,
+      "name":"Nikhitha",
+      "photopath":"assets/images/nikki.jpg",
+      "content":"Nikhitha belong to third generation "
+    },
+    {"id":9,
+       "name":"Sandeep",
+       "photopath":"assets/images/sandeep.jpg",
+       "content":"sandeep reddy belong to third generation"
+
+       
+      },
+    {"id":10, 
+      "name":"Pavan",
+      "photopath":"assets/images/pavan.jpg",
+      "content":"pavan kumar reddy belong to third generation"
+
+    }
+
+  ]

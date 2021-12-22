@@ -1,0 +1,20 @@
+h3{
+    text-align: center;
+    color:red;
+}
+#first{
+    
+    margin-left: 100px;
+}
+#about{
+    float: left;
+}
+/* #aboutDetails{
+    float: right;
+} */
+#changeFamilyName{
+    float: right;
+}
+#search{
+    float: right;
+}

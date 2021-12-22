@@ -1,0 +1,79 @@
+
+ <!-- Nav tabs -->
+ <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#Personaldetails">Personal details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#ResetPassword">Reset Password</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#DeleteAccount">Delete Account</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="Personaldetails" class="container tab-pane active"><br>
+      <h3 style="color:red">Personal details</h3>
+     userName : <b>{{register.userName}}</b><br><br>
+     Email    : <b>{{register.email}}</b><br><br>
+     Password :<b>{{register.password}}</b><br><br><br>
+     <button style='margin-right:16px' (click)="back()" class="btn btn-info btn-xs" style="margin-left: 10px">Back</button> 
+
+     <button style='margin-right:16px' (click)="updateEmployee(register.id)" class="btn btn-success btn-xs" style="margin-left: 10px">Edit details</button>
+
+    </div>
+    <div id="ResetPassword" class="container tab-pane fade"><br>
+      <h3 style="color:red">Reset Password</h3>
+      <p>Please reset password here!</p>
+      <form [formGroup]="login" (ngsubmit)="login.valid && onSubmit()">
+      <div class="form-group">
+        <label>Current Password :</label><br>
+   
+        <!-- <input type ="password" [class.is-invalid]="password.invalid && password.touched " formControlName="password" class =form-control> -->
+        <div class="input-container">
+            <input [type]="field ? 'password' :'text'"  [class.is-invalid]="f.oldPassword.invalid && f.oldPassword.touched " formControlName="oldPassword" class ="form-control">
+            <i class="material-icons" (click)="field=!field" >{{field ? 'visibility_off' :'visibility'}}</i>
+        </div>
+        <div *ngIf="(f.oldPassword.invalid && f.oldPassword.touched)|| empty">
+        <small *ngIf="f.oldPassword.errors?.required; else oldPassword">Password is required</small>
+        <ng-template #oldPassword>
+        <small *ngIf="f.oldPassword.errors?.pattern">password is invalid</small>
+        </ng-template>
+        <!-- <small *ngIf="password.errors?.minlength">password must be at least 8 characters</small> -->
+        
+        </div>
+        </div>
+
+
+        <div class="form-group">
+            <label>New Password :</label><br>
+       
+            <!-- <input type ="password" [class.is-invalid]="password.invalid && password.touched " formControlName="password" class =form-control> -->
+            <div class="input-container">
+                <input [type]="field1 ? 'password' :'text'"  [class.is-invalid]="f.newPassword.invalid && f.newPassword.touched " formControlName="newPassword" class ="form-control">
+                <i class="material-icons" (click)="field1=!field1" >{{field1 ? 'visibility_off' :'visibility'}}</i>
+            </div>
+            <div *ngIf="(f.newPassword.invalid && f.newPassword.touched)|| empty">
+            <small *ngIf="f.newPassword.errors?.required; else newPassword">Password is required</small>
+            <ng-template #newPassword>
+            <small *ngIf="f.newPassword.errors?.pattern">password is invalid</small>
+            </ng-template>
+            <!-- <small *ngIf="password.errors?.minlength">password must be at least 8 characters</small> -->
+            
+            </div>
+            </div>
+            <button style='margin-right:16px' (click)="back()" class="btn btn-info btn-xs" style="margin-left: 10px">Back</button> 
+            <button style='margin-right:16px'  (click)="onSubmit()" class="btn btn-success btn-xs" style="margin-left: 10px">submit</button> 
+      </form>
+
+    </div>
+    <div id="DeleteAccount" class="container tab-pane fade"><br>
+      <h3 style="color:red">Delete Account</h3>
+      <p>if you want to delete account permanently? please click below button </p>
+      <button style='margin-right:16px' (click)="back()" class="btn btn-info btn-xs" style="margin-left: 10px">Back</button> 
+      <button style='margin-right:16px' (click)="delteUser(register.id)" class="btn btn-danger btn-xs" style="margin-left: 10px">Delete Account</button> 
+    </div>
+  </div>
+

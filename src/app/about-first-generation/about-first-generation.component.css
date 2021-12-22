@@ -1,0 +1,13 @@
+.tab{
+    border: 2px solid red; 
+ }
+ .imageClass{
+     height: 200px;
+     width: 200px;
+ }
+ .heading{
+     background-color: aqua;
+ }
+ #search{
+     float: right;
+ }

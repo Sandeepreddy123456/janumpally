@@ -1,0 +1,31 @@
+[
+    { "id":1,
+      "name":"venkat reddy-laxmi",
+      "photopath":"assets/images/pavan.jpg",
+      "content":"venkat reddy belong to second generation and he is first person in second generation.His wife name is laxmi and they have 3 childern(shailaja,prashanthi and ashok)"
+    },
+    {"id":2, 
+      "name":"suvarna reddy-venkatreddy",
+      "photopath":"assets/images/pavan.jpg",
+      "content":"suvarna reddy belong to second generation and she is second person in second generation. her husband name is venkat reddy and they have 2 children(jyothi and nagesh)"
+    },
+
+    {"id":3, 
+      "name":"prabhakar reddy-Rajitha",
+      "photopath":"assets/images/pavan.jpg",
+      "content":"Prabhakar reddy belong to second generation and he is third person in second generation. His wife name is rajitha and they have 2 children (Krishna and Ramesh)"
+    },
+    { "id":4,
+      "name":"madhava reddy-madhavi",
+      "photopath":"assets/images/pavan.jpg",
+      "content":"madhava reddy belong to second generation and he is fourth person in second genenration .His wife name is madavi and they had a child (Nikhitha)"
+    },
+    {"id":5,
+       "name":"Gopal reddy-jyothi",
+       "photopath":"assets/images/pavan.jpg",
+       "content":"Gopal reddy belong to second generation and he is fifth person in second generation .His wife name is jyothi and they have 2 children (sandeep and pavan)"
+
+      }
+   
+
+  ]

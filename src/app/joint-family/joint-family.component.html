@@ -1,0 +1,35 @@
+<div class ="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <app-nav-bar></app-nav-bar>
+        </div>
+        <div class="col-sm-10">
+<h3>First Generation</h3>
+<div class="form-group">
+    <input  id="search" type="text" class ="form-control" placeholder="Search By Name" style="width: 300px" [(ngModel)]="searchTerm">
+    <!-- <button  id="changeFamilyName" (click)="changeFamilyName()">Change Family Name</button> -->
+    </div>
+    <!-- <div *ngFor="let firstGeneration of family | familyFilter :searchTerm" (mousemove)="onMouseMove()" >{{firstGeneration.name}}</div> -->
+    <!-- <div *ngFor="let employee of filteredEmployees">{{employee.name}}</div> -->
+<div id="about">
+<h6 *ngFor="let firstGeneration of family |familyFilter: searchTerm">{{firstGeneration.id}} {{firstGeneration.name}}</h6>
+<h3>{{errorMsg}}</h3>
+
+</div><br><br>
+<div id="aboutDetails">
+ <button  class="btn btn-info"   (click)="aboutFirst()" >More details about First Generation</button>
+</div>
+<router-outlet></router-outlet>
+<!-- <about-first-generation></about-first-generation> -->
+<!-- <router-outlet></router-outlet> -->
+<br>
+<button id="back" class ="btn btn-info" (click)="back()">back</button>
+
+<!-- <button  class="btn btn-success" id="first" routerLink ="/secondgeneration" >Second Generation</button> -->
+</div>
+</div>
+<div style="margin-top: 0px;">
+    <app-footer-page></app-footer-page>
+  </div>
+</div>
+
